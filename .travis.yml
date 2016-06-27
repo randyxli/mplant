@@ -1,7 +1,7 @@
 services:
   - postgresql
 before_script:
-  - psql -c 'create role mplant; create databse mplant owner mplant;' -U postgres
+  - psql -c 'create role mplant; create database mplant owner mplant;' -U postgres
 language: python
 python:
   - "3.5"
