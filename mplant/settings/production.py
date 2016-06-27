@@ -1,4 +1,4 @@
-from project.settings.base import *
+from mplant.settings.base import *
 import dj_database_url
 DEBUG = False
 

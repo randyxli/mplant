@@ -1,3 +1,4 @@
+from mplant.settings.base import *
 DEBUG = True
 
 # Database
