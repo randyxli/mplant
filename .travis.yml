@@ -1,0 +1,12 @@
+services:
+  - postgresql
+before_script:
+  - psql -c 'create user mplant createdb password '\''mplant'\'';' -U postgres
+  - psql -c 'create database mplant owner mplant;' -U postgres
+language: python
+python:
+  - "3.5"
+# command to install dependencies
+install: "pip install -r requirements.txt"
+#command to run tests
+script: python manage.py test --settings=mplant.settings.development
